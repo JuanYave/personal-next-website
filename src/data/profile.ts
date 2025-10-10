@@ -17,6 +17,7 @@ export const contactInfo: ContactInfo = {
   phone: "+5215540662920",
   linkedin: "https://www.linkedin.com/in/juan-jose-herrera-sierra",
   location: "Benito Juárez, Ciudad de México, México",
+  github: "https://github.com/JuanYave",
 };
 
 export const experiences: Experience[] = [
@@ -93,7 +94,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "IA Generativa",
-    items: ["ChatGPT", "Claude", "Gemini", "Cursor"],
+    items: ["ChatGPT", "Claude", "Gemini", "Cursor", "Windsurf"],
   },
 ];
 

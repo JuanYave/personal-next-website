@@ -8,6 +8,7 @@ export type Experience = {
   period: string;
   location: string;
   achievements: string[];
+  website?: string;
 };
 
 export type Schooling = {
@@ -36,4 +37,5 @@ export type ContactInfo = {
   phone: string;
   linkedin: string;
   location: string;
+  github: string;
 };

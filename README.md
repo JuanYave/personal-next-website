@@ -1,6 +1,6 @@
 # Juan José Herrera Sierra - Personal Website
 
-Modern, responsive personal portfolio website showcasing professional experience, skills, and contact information.
+Modern, responsive personal portfolio website showcasing professional experience, skills, education, and certifications.
 
 ## 🚀 Tech Stack
 
@@ -17,23 +17,26 @@ Modern, responsive personal portfolio website showcasing professional experience
 src/
 ├── app/
 │   ├── layout.tsx          # Root layout with metadata
-│   ├── page.tsx            # Home page (49 lines)
+│   ├── page.tsx            # Home page with two-column layout
 │   └── globals.css         # Global styles and theme variables
 ├── components/
+│   ├── Sidebar.tsx         # Sidebar with profile info and navigation
 │   ├── sections/           # Page sections
-│   │   ├── HeroSection.tsx
 │   │   ├── AboutSection.tsx
 │   │   ├── ExperienceSection.tsx
 │   │   ├── SkillsSection.tsx
-│   │   ├── EducationSection.tsx
-│   │   └── ContactSection.tsx
+│   │   └── EducationSection.tsx
+│   ├── language/           # Language management
+│   │   ├── language-provider.tsx
+│   │   └── language-toggle.tsx
 │   └── theme/              # Theme management
 │       ├── theme-provider.tsx
 │       └── theme-toggle.tsx
 ├── data/
-│   └── profile.ts          # Resume and contact data
+│   └── translations.ts     # Bilingual content (ES/EN)
 └── types/
-    └── profile.ts          # TypeScript type definitions
+    ├── profile.ts          # TypeScript type definitions
+    └── translations.ts     # Translation type definitions
 ```
 
 ## 🛠️ Getting Started
@@ -70,10 +73,13 @@ The application uses Turbopack for fast builds and hot module replacement.
 
 ## 🎨 Features
 
+- **Two-Column Layout**: Professional sidebar design inspired by Shine template
+- **Bilingual Support**: Toggle between Spanish and English with persistent preference
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
-- **Theme Switching**: Light/Dark/System modes with persistent preferences
+- **Theme Switching**: Light/Dark modes with persistent preferences
 - **Type Safety**: Full TypeScript coverage with strict mode
 - **Component Architecture**: Modular, reusable components following separation of concerns
+- **Timeline View**: Clean timeline-style experience section
 - **SEO Optimized**: Proper metadata and semantic HTML
 - **Performance**: Optimized fonts and images
 - **Accessibility**: WCAG compliant with proper ARIA labels
@@ -82,8 +88,7 @@ The application uses Turbopack for fast builds and hot module replacement.
 
 ### Updating Content
 
-Edit the data in `src/data/profile.ts` to update:
-- Contact information
+Edit the data in `src/data/translations.ts` to update bilingual content:
 - Work experience
 - Skills
 - Education
@@ -110,3 +115,4 @@ Private - All rights reserved
 - Tech Lead & Senior Backend Engineer
 - Email: juanjhs@gmail.com
 - LinkedIn: [juan-jose-herrera-sierra](https://www.linkedin.com/in/juan-jose-herrera-sierra)
+- GitHub: [@JuanYave](https://github.com/JuanYave)

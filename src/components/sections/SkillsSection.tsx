@@ -1,10 +1,9 @@
 "use client";
 
 /**
- * Skills section component displaying technical competencies
+ * Skills section component displaying technical competencies as cards
  */
 import type { ReactElement } from "react";
-import { Award } from "lucide-react";
 import { useLanguage } from "@/components/language/language-provider";
 import { translations } from "@/data/translations";
 
@@ -13,27 +12,23 @@ export default function SkillsSection(): ReactElement {
   const t = translations[language];
 
   return (
-    <section id="habilidades" className="space-y-10">
-      <header className="flex items-center gap-3">
-        <Award className="h-8 w-8 text-accent" />
-        <div>
-          <h2 className="text-2xl font-semibold text-primary sm:text-3xl">{t.sections.skills}</h2>
-          <p className="text-sm text-muted">{t.sections.skillsSubtitle}</p>
-        </div>
-      </header>
-
-      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+    <section id="habilidades">
+      <h2 className="section-heading">{t.sections.skills}</h2>
+      
+      <div className="space-y-6">
         {t.skillsData.map(({ category, items }) => (
-          <div key={category} className="card-surface glass-border flex flex-col gap-3 rounded-3xl p-6">
-            <h3 className="text-lg font-semibold text-primary">{category}</h3>
-            <ul className="space-y-2 text-sm text-secondary">
+          <div key={category}>
+            <h3 className="mb-4 text-base font-bold text-primary">{category}</h3>
+            <div className="flex flex-wrap gap-2">
               {items.map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <span className="bullet-dot" />
-                  <span>{item}</span>
-                </li>
+                <div
+                  key={item}
+                  className="rounded-lg border border-border bg-sidebar-bg px-4 py-2 text-sm font-medium text-secondary shadow-sm transition-shadow hover:shadow-md"
+                >
+                  {item}
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>

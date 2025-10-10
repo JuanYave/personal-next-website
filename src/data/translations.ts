@@ -7,50 +7,28 @@ import type { LocalizedContent } from "@/types/translations";
 export const translations: LocalizedContent = {
   es: {
     hero: {
-      greeting: "Hola, soy",
       subtitle: "Tech Lead · Senior Backend Engineer",
-      tagline:
-        "Ingeniero en Tecnologías Computacionales enfocado en construir plataformas escalables, liderar equipos de alto desempeño y entregar productos resilientes sobre AWS, Python y Java.",
-      description:
-        "Combino liderazgo técnico, cultura DevOps e infraestructura como código para acelerar la entrega de valor, optimizar costos e impulsar el crecimiento de equipos. He guiado transformaciones de monolitos a microservicios, elevando observabilidad y confiabilidad en entornos de misión crítica.",
-      viewExperience: "Ver experiencia",
-      letsConnect: "Conectemos",
       location: "Ubicación",
-      professionalLinkedIn: "LinkedIn profesional",
     },
     about: {
       title: "Sobre mí",
       content: [
-        "Soy un líder técnico y arquitecto de software con más de 10 años de experiencia diseñando, construyendo y escalando sistemas backend en entornos de alta exigencia.",
-        "Mi enfoque se centra en la entrega de valor sostenible mediante prácticas DevOps, infraestructura como código y observabilidad profunda.",
-        "He liderado transformaciones técnicas desde monolitos hacia arquitecturas de microservicios, implementando soluciones en AWS con Python, Django, FastAPI y Java.",
+        "Ingeniero de Software (Software Engineer) con más de 10 años de experiencia en desarrollo backend, arquitectura de software y liderazgo técnico. Éxito comprobado diseñando REST APIs (Application Programming Interfaces) escalables, desarrollando lógica de negocio e impulsando mejoras de calidad usando Python (Django, FastAPI), Java y AWS (Amazon Web Services).",
+        "Reconocido por fomentar equipos colaborativos de alto desempeño y entregar software de alta calidad. Especializado en arquitectura de microservicios, con conocimientos de Cloud Computing, DevOps, CI/CD (Continuous Integration/Continuous Deployment), y desarrollo backend full-stack. He liderado transformaciones de monolitos a microservicios, implementado Infrastructure as Code (IaC) con Terraform y Docker, y agregado observabilidad en entornos de misión crítica.",
       ],
     },
     sections: {
       experience: "Experiencia",
-      experienceSubtitle: "Liderazgo y entrega end-to-end en plataformas de misión crítica",
       skills: "Habilidades clave",
-      skillsSubtitle: "Stacks y prácticas que domino para crear soluciones robustas",
       education: "Formación & Certificaciones",
-      educationSubtitle: "Aprendizaje continuo para liderar con visión técnica",
       certifications: "Certificaciones",
       languages: "Idiomas",
-    },
-    contact: {
-      title: "¿Listo para hablar de tu próximo reto?",
-      subtitle: "Construyamos juntos",
-      description:
-        "Estoy disponible para liderar iniciativas tecnológicas, acelerar entregas backend o apoyar a equipos en la adopción de prácticas DevOps e infraestructura escalable. Escríbeme y diseñemos el plan ideal.",
-      sendEmail: "Enviar correo",
-      connectLinkedIn: "Conectemos en LinkedIn",
-      callPhone: "Llamar por teléfono",
     },
     navLinks: [
       { href: "#sobre-mi", label: "Sobre mí" },
       { href: "#experiencia", label: "Experiencia" },
       { href: "#habilidades", label: "Habilidades" },
       { href: "#formacion", label: "Formación" },
-      { href: "#contacto", label: "Contacto" },
     ],
     experiences: [
       {
@@ -58,31 +36,29 @@ export const translations: LocalizedContent = {
         role: "Tech Lead",
         period: "mayo 2022 - Presente",
         location: "Ciudad de México",
+        website: "yave.mx",
         achievements: [
-          "Gestioné el equipo técnico y consolidé prácticas de desarrollo para elevar calidad y productividad.",
-          "Definí roadmap técnico alineado a objetivos de producto y lideré la transición hacia microservicios.",
-          "Implementé Terraform, Docker y observabilidad (Sentry, Honeycomb) como prácticas estándar de plataforma.",
-          "Optimicé consultas y cachés reduciendo latencia y costos operativos de cargas recurrentes.",
+          "Gestioné un equipo técnico de 8 personas en desarrollo backend y arquitectura de software.",
+          "Lideré análisis de requerimientos y ejecución de roadmap en JIRA, siempre alineado con el equipo de Producto.",
+          "Estandaricé prácticas de desarrollo e implementé metodologías ágiles (Scrum, Kanban), logrando una mejora del 50% en tasas de completitud de tareas.",
+          "Lideré exitosamente la migración de arquitectura monolítica a microservicios, integrando Infrastructure as Code (IaC) (Terraform, Docker) y herramientas de observabilidad (Sentry, Honeycomb).",
+          "Desarrollé soluciones backend por medio de REST APIs y lógica de negocio en Python (Django, FastAPI).",
+          "Implementé estrategias de optimización, caching y performance tuning para maximizar el rendimiento.",
+          "Recientemente entrené al equipo para aprovechar LLMs (Large Language Models) como ChatGPT y Claude para mejorar la productividad, calidad de código, cobertura de pruebas y procesos de code review.",
+          "Liderazgo técnico enfocado en calidad, productividad y trabajo en equipo efectivo.",
         ],
       },
       {
         company: "Yave",
-        role: "Software Engineer - Backend",
-        period: "diciembre 2021 - mayo 2022",
+        role: "Senior Backend Engineer | Squad Leader",
+        period: "septiembre 2017 - mayo 2022",
         location: "Ciudad de México",
+        website: "yave.mx",
         achievements: [
-          "Entregué iteraciones de backend críticas asegurando satisfacción de clientes internos y plazos de roadmap.",
-          "Coordine alcance con Product Owner y validación continua con usuarios clave.",
-        ],
-      },
-      {
-        company: "Yave",
-        role: "Senior Backend Engineer",
-        period: "septiembre 2017 - diciembre 2021",
-        location: "Ciudad de México",
-        achievements: [
-          "Diseñé y desarrollé la plataforma principal de backend en Python.",
-          "Integré y administré CRM Salesforce, sincronizando datos entre SQL y Salesforce.",
+          "Diseñé y desarrollé la plataforma principal de backend en Python (Django).",
+          "Integré y administré CRM (Customer Relationship Management) Salesforce, sincronizando datos entre la base de datos SQL (PostgreSQL) y Salesforce mediante REST APIs.",
+          "Entregué iteraciones de backend críticas asegurando satisfacción de clientes internos y cumplimiento de plazos de roadmap.",
+          "Coordiné alcance con Product Owner y validación continua con usuarios clave.",
         ],
       },
       {
@@ -90,9 +66,11 @@ export const translations: LocalizedContent = {
         role: "Analista de Sistemas / Fullstack",
         period: "junio 2015 - septiembre 2017",
         location: "Ciudad de México",
+        website: "ocra.com.mx",
         achievements: [
-          "Construí 'CERCO Móvil' con Ionic para 1000 usuarios internos.",
-          "Implementé BI con Qlik Sense Cloud y desarrollé APIs REST en Java.",
+          "Desarrollé aplicaciones móviles multiplataforma usando Ionic Framework (Android/iOS), junto con una REST API optimizada en Java, aumentando la productividad general de cientos de usuarios.",
+          "Implementé soluciones de Business Intelligence (BI) y reportes con Qlik Sense Cloud.",
+          "Proporcioné mantenimiento y soporte continuo para sistemas Java y PHP existentes, logrando una mejora del 35% en tiempos de respuesta mediante optimización de código y queries.",
         ],
       },
       {
@@ -100,9 +78,12 @@ export const translations: LocalizedContent = {
         role: "Software Developer",
         period: "junio 2013 - junio 2015",
         location: "Ciudad de México",
+        website: "teed.com.mx",
         achievements: [
-          "Desarrollé un Sistema de Gestión de Aprendizaje completo, liderando diseño y QA.",
-          "Dirigí proyectos Web API y móviles, coordinando equipos técnicos multidisciplinarios.",
+          "Desarrollé un LMS (Learning Management System) completo, liderando diseño de software, que fue utilizado por clientes como el Tecnológico de Monterrey, entre otros.",
+          "Implementé un REST API para integrar el LMS (Learning Management System) con distintas aplicaciones web y móviles.",
+          "Participé en el desarrollo de 'Teed Challenge' (Android/iOS), una aplicación multiplataforma para aprendizaje gamificado.",
+          "Diseñé y desarrollé exitosamente distintas aplicaciones web y móviles, utilizando en cada una diversas tecnologías.",
         ],
       },
     ],
@@ -110,10 +91,11 @@ export const translations: LocalizedContent = {
       {
         category: "Cloud & DevOps",
         items: [
-          "AWS (EC2, S3, Lambda, VPC)",
+          "Amazon Web Services (AppRunner, EC2, S3, Lambda, VPC)",
           "Docker",
-          "Terraform",
-          "CI/CD en GitHub",
+          "Terraform (IaC)",
+          "Kubernetes (K8s)",
+          "GitHub Actions", "Gitflow"
         ],
       },
       {
@@ -130,11 +112,11 @@ export const translations: LocalizedContent = {
       },
       {
         category: "Datos & Automatización",
-        items: ["ETL", "Modelado de datos", "Zapier", "n8n"],
+        items: ["ETL (Extract, Transform, Load)", "Modelado de bases de datos", "Zapier", "n8n"],
       },
       {
         category: "IA Generativa",
-        items: ["ChatGPT", "Claude", "Gemini", "Cursor"],
+        items: ["ChatGPT", "Claude", "Gemini", "Cursor", "Windsurf"],
       },
     ],
     certifications: [
@@ -174,106 +156,88 @@ export const translations: LocalizedContent = {
       phone: "+5215540662920",
       linkedin: "https://www.linkedin.com/in/juan-jose-herrera-sierra",
       location: "Benito Juárez, Ciudad de México, México",
+      github: "https://github.com/JuanYave",
     },
   },
   en: {
     hero: {
-      greeting: "Hi, I'm",
       subtitle: "Tech Lead · Senior Backend Engineer",
-      tagline:
-        "Computer Technologies Engineer focused on building scalable platforms, leading high-performance teams, and delivering resilient products on AWS, Python, and Java.",
-      description:
-        "I combine technical leadership, DevOps culture, and infrastructure as code to accelerate value delivery, optimize costs, and drive team growth. I've guided transformations from monoliths to microservices, elevating observability and reliability in mission-critical environments.",
-      viewExperience: "View experience",
-      letsConnect: "Let's connect",
       location: "Location",
-      professionalLinkedIn: "Professional LinkedIn",
     },
     about: {
       title: "About me",
       content: [
-        "I'm a technical leader and software architect with over 10 years of experience designing, building, and scaling backend systems in high-demand environments.",
-        "My focus is on delivering sustainable value through DevOps practices, infrastructure as code, and deep observability.",
-        "I've led technical transformations from monoliths to microservices architectures, implementing solutions on AWS with Python, Django, FastAPI, and Java.",
+        "Software Engineer with over 10 years of extensive experience in backend development, software architecture, and technical leadership. Proven success designing scalable APIs (Application Programming Interfaces), REST APIs, and GraphQL, driving quality improvements using Python (Django, FastAPI), Java, and AWS (Amazon Web Services).",
+        "Recognized for fostering collaborative, high-performance teams and delivering impactful, high-quality software. Specialized in microservices architecture, with knowledge in Cloud Computing, DevOps, CI/CD (Continuous Integration/Continuous Deployment), and full-stack backend development. I've led transformations from monoliths to microservices, implemented Infrastructure as Code (IaC) with Terraform and Docker, and elevated observability in mission-critical environments.",
       ],
     },
     sections: {
       experience: "Experience",
-      experienceSubtitle: "End-to-end leadership and delivery on mission-critical platforms",
       skills: "Key Skills",
-      skillsSubtitle: "Stacks and practices I master to create robust solutions",
       education: "Education & Certifications",
-      educationSubtitle: "Continuous learning to lead with technical vision",
       certifications: "Certifications",
       languages: "Languages",
-    },
-    contact: {
-      title: "Ready to discuss your next challenge?",
-      subtitle: "Let's build together",
-      description:
-        "I'm available to lead technical initiatives, accelerate backend deliveries, or support teams in adopting DevOps practices and scalable infrastructure. Write me and let's design the ideal plan.",
-      sendEmail: "Send email",
-      connectLinkedIn: "Connect on LinkedIn",
-      callPhone: "Call by phone",
     },
     navLinks: [
       { href: "#sobre-mi", label: "About" },
       { href: "#experiencia", label: "Experience" },
       { href: "#habilidades", label: "Skills" },
       { href: "#formacion", label: "Education" },
-      { href: "#contacto", label: "Contact" },
     ],
     experiences: [
       {
         company: "Yave",
         role: "Tech Lead",
-        period: "May 2022 - Present",
+        period: "May 2022 - Current",
         location: "Mexico City",
+        website: "yave.mx",
         achievements: [
-          "Managed the technical team and consolidated development practices to elevate quality and productivity.",
-          "Defined technical roadmap aligned with product objectives and led transition to microservices.",
-          "Implemented Terraform, Docker, and observability (Sentry, Honeycomb) as standard platform practices.",
-          "Optimized queries and caches reducing latency and operational costs of recurring workloads.",
+          "Managed a technical team of 8 people in backend development and software architecture.",
+          "Led requirement analysis and roadmap execution in JIRA, always aligned with the Product team.",
+          "Standardized development practices and implemented agile methodologies (Scrum, Kanban), leading to a 50% improvement in task completion rates.",
+          "Successfully led migration from monolithic to microservices architecture, integrating Infrastructure as Code (IaC) (Terraform, Docker) and observability tools (Sentry, Honeycomb).",
+          "Developed backend solutions through REST APIs and business logic in Python (Django, FastAPI).",
+          "Implemented optimization, caching, and performance tuning strategies to maximize system performance.",
+          "Recently trained the team to leverage LLMs (Large Language Models) such as ChatGPT and Claude to improve productivity, code quality, test coverage, and code review processes.",
+          "Technical leadership focused on quality, productivity, and effective teamwork.",
         ],
       },
       {
         company: "Yave",
-        role: "Software Engineer - Backend",
-        period: "December 2021 - May 2022",
+        role: "Senior Backend Engineer | Squad Leader",
+        period: "September 2017 - May 2022",
         location: "Mexico City",
+        website: "yave.mx",
         achievements: [
-          "Delivered critical backend iterations ensuring internal customer satisfaction and roadmap deadlines.",
+          "Designed and developed the main backend platform in Python (Django).",
+          "Integrated and managed Salesforce CRM (Customer Relationship Management), synchronizing data between the SQL database (PostgreSQL) and Salesforce using REST APIs.",
+          "Delivered critical backend iterations ensuring internal customer satisfaction and roadmap deadline compliance.",
           "Coordinated scope with Product Owner and continuous validation with key users.",
         ],
       },
       {
-        company: "Yave",
-        role: "Senior Backend Engineer",
-        period: "September 2017 - December 2021",
-        location: "Mexico City",
-        achievements: [
-          "Designed and developed the main backend platform in Python.",
-          "Integrated and managed Salesforce CRM, synchronizing data between SQL and Salesforce.",
-        ],
-      },
-      {
-        company: "Coordinating Office for Insured Risks (OCRA)",
+        company: "Oficina Coordinadora de Riesgos Asegurados (OCRA)",
         role: "Systems Analyst / Fullstack",
         period: "June 2015 - September 2017",
         location: "Mexico City",
+        website: "ocra.com.mx",
         achievements: [
-          "Built 'CERCO Mobile' with Ionic for 1000 internal users.",
-          "Implemented BI with Qlik Sense Cloud and developed REST APIs in Java.",
+          "Developed cross-platform mobile applications using Ionic Framework (Android/iOS), along with an optimized REST API in Java, boosting overall productivity of hundreds of users.",
+          "Implemented Business Intelligence (BI) and reporting solutions with Qlik Sense Cloud.",
+          "Provided maintenance and continuous support for existing Java and PHP systems, achieving 35% improvement in response times through code optimization and query tuning.",
         ],
       },
       {
-        company: "TEED Educational Technology",
+        company: "TEED Tecnología Educativa",
         role: "Software Developer",
         period: "June 2013 - June 2015",
         location: "Mexico City",
+        website: "teed.com.mx",
         achievements: [
-          "Developed a complete Learning Management System, leading design and QA.",
-          "Led Web API and mobile projects, coordinating multidisciplinary technical teams.",
+          "Developed a complete LMS (Learning Management System), leading software design, which was used by clients such as Tecnológico de Monterrey, among others.",
+          "Implemented a REST API to integrate the LMS (Learning Management System) with various web and mobile applications.",
+          "Participated in the development of 'Teed Challenge' (Android/iOS), a cross-platform application for gamified learning.",
+          "Successfully designed and developed various web and mobile applications, using diverse technologies in each one.",
         ],
       },
     ],
@@ -281,10 +245,11 @@ export const translations: LocalizedContent = {
       {
         category: "Cloud & DevOps",
         items: [
-          "AWS (EC2, S3, Lambda, VPC)",
+          "Amazon Web Services (AppRunner, EC2, S3, Lambda, VPC)",
           "Docker",
-          "Terraform",
-          "CI/CD on GitHub",
+          "Terraform (IaC)",
+          "Kubernetes (K8s)",
+          "GitHub Actions", "Gitflow"
         ],
       },
       {
@@ -301,11 +266,11 @@ export const translations: LocalizedContent = {
       },
       {
         category: "Data & Automation",
-        items: ["ETL", "Data modeling", "Zapier", "n8n"],
+        items: ["ETL (Extract, Transform, Load)", "Database modeling", "Zapier", "n8n"],
       },
       {
         category: "Generative AI",
-        items: ["ChatGPT", "Claude", "Gemini", "Cursor"],
+        items: ["ChatGPT", "Claude", "Gemini", "Cursor", "Windsurf"],
       },
     ],
     certifications: [
@@ -320,17 +285,17 @@ export const translations: LocalizedContent = {
         span: "2016 - 2018",
       },
       {
-        title: "Specialization in Project Management (IT)",
+        title: "Postgraduate Specialization in Project Management (IT)",
         institution: "Tecnológico de Monterrey",
         span: "2017 - 2018",
       },
       {
-        title: "Specialization in Software Engineering",
+        title: "Postgraduate Specialization in Software Engineering",
         institution: "Tecnológico de Monterrey",
         span: "2016 - 2017",
       },
       {
-        title: "Computer Technologies Engineer",
+        title: "Bachelor of Engineering in Computer Technologies",
         institution: "Tecnológico de Monterrey",
         span: "2009 - 2013",
       },
@@ -345,6 +310,7 @@ export const translations: LocalizedContent = {
       phone: "+5215540662920",
       linkedin: "https://www.linkedin.com/in/juan-jose-herrera-sierra",
       location: "Benito Juárez, Mexico City, Mexico",
+      github: "https://github.com/JuanYave",
     },
   },
 };
