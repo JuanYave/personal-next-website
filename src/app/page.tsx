@@ -1,5 +1,7 @@
+"use client";
+
 /**
- * Home page component for Juan Herrera's personal website
+ * Home page component for Juan José Herrera Sierra's personal website
  * Displays hero section, experience, skills, education, and contact information
  */
 import type { ReactElement } from "react";
@@ -9,15 +11,6 @@ import ExperienceSection from "@/components/sections/ExperienceSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import EducationSection from "@/components/sections/EducationSection";
 import ContactSection from "@/components/sections/ContactSection";
-import {
-  experiences,
-  skills,
-  certifications,
-  education,
-  languages,
-  navLinks,
-  contactInfo,
-} from "@/data/profile";
 
 export default function Home(): ReactElement {
   return (
@@ -29,18 +22,14 @@ export default function Home(): ReactElement {
       </div>
 
       <div className="w-full max-w-6xl space-y-24">
-        <HeroSection navLinks={navLinks} contactInfo={contactInfo} />
+        <HeroSection />
 
         <main className="space-y-24">
           <AboutSection />
-          <ExperienceSection experiences={experiences} />
-          <SkillsSection skills={skills} />
-          <EducationSection
-            education={education}
-            certifications={certifications}
-            languages={languages}
-          />
-          <ContactSection contactInfo={contactInfo} />
+          <ExperienceSection />
+          <SkillsSection />
+          <EducationSection />
+          <ContactSection />
         </main>
       </div>
     </div>

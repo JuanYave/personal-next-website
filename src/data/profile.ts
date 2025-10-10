@@ -1,5 +1,5 @@
 /**
- * Profile data for Juan Herrera's personal website
+ * Profile data for Juan José Herrera Sierra's personal website
  * This file contains all static content and resume information
  */
 

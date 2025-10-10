@@ -1,27 +1,29 @@
+"use client";
+
 /**
  * Experience section component displaying work history
  */
 import type { ReactElement } from "react";
 import { Briefcase } from "lucide-react";
-import type { Experience } from "@/types/profile";
+import { useLanguage } from "@/components/language/language-provider";
+import { translations } from "@/data/translations";
 
-type ExperienceSectionProps = {
-  experiences: Experience[];
-};
+export default function ExperienceSection(): ReactElement {
+  const { language } = useLanguage();
+  const t = translations[language];
 
-export default function ExperienceSection({ experiences }: ExperienceSectionProps): ReactElement {
   return (
     <section id="experiencia" className="space-y-10">
       <header className="flex items-center gap-3">
         <Briefcase className="h-8 w-8 text-accent" />
         <div>
-          <h2 className="text-2xl font-semibold text-primary sm:text-3xl">Experiencia</h2>
-          <p className="text-sm text-muted">Liderazgo y entrega end-to-end en plataformas de misión crítica</p>
+          <h2 className="text-2xl font-semibold text-primary sm:text-3xl">{t.sections.experience}</h2>
+          <p className="text-sm text-muted">{t.sections.experienceSubtitle}</p>
         </div>
       </header>
 
       <div className="grid gap-6">
-        {experiences.map((experience) => (
+        {t.experiences.map((experience) => (
           <article
             key={`${experience.company}-${experience.role}-${experience.period}`}
             className="card-surface glass-border rounded-3xl p-8"

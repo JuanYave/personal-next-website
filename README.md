@@ -1,4 +1,4 @@
-# Juan Herrera - Personal Website
+# Juan José Herrera Sierra - Personal Website
 
 Modern, responsive personal portfolio website showcasing professional experience, skills, and contact information.
 
@@ -106,7 +106,7 @@ Private - All rights reserved
 
 ## 👤 Author
 
-**Juan Herrera**
+**Juan José Herrera Sierra**
 - Tech Lead & Senior Backend Engineer
 - Email: juanjhs@gmail.com
 - LinkedIn: [juan-jose-herrera-sierra](https://www.linkedin.com/in/juan-jose-herrera-sierra)

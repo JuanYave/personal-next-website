@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { LanguageProvider } from "@/components/language/language-provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Juan Herrera | Tech Lead & Senior Backend Engineer",
+  title: "Juan José Herrera Sierra | Tech Lead & Senior Backend Engineer",
   description:
-    "Portfolio and experience of Juan Herrera, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",
+    "Portfolio and experience of Juan José Herrera Sierra, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",
   keywords: [
-    "Juan Herrera",
+    "Juan José Herrera Sierra",
     "Tech Lead",
     "Backend Engineer",
     "AWS",
@@ -32,22 +33,22 @@ export const metadata: Metadata = {
     "Microservices",
     "Ciudad de México",
   ],
-  authors: [{ name: "Juan Herrera", url: "https://juanherrera.dev" }],
-  creator: "Juan Herrera",
+  authors: [{ name: "Juan José Herrera Sierra", url: "https://juanherrera.dev" }],
+  creator: "Juan José Herrera Sierra",
   openGraph: {
     type: "website",
     locale: "es_MX",
     url: "https://juanherrera.dev",
-    title: "Juan Herrera | Tech Lead & Senior Backend Engineer",
+    title: "Juan José Herrera Sierra | Tech Lead & Senior Backend Engineer",
     description:
-      "Portfolio and experience of Juan Herrera, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",
-    siteName: "Juan Herrera Portfolio",
+      "Portfolio and experience of Juan José Herrera Sierra, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",
+    siteName: "Juan José Herrera Sierra Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Juan Herrera | Tech Lead & Senior Backend Engineer",
+    title: "Juan José Herrera Sierra | Tech Lead & Senior Backend Engineer",
     description:
-      "Portfolio and experience of Juan Herrera, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",
+      "Portfolio and experience of Juan José Herrera Sierra, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",
   },
   robots: {
     index: true,
@@ -72,7 +73,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   );
