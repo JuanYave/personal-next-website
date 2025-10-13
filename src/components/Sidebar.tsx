@@ -17,7 +17,7 @@ export default function Sidebar(): ReactElement {
   const t = translations[language];
 
   return (
-    <aside className="sidebar lg:overflow-y-auto">
+    <aside className="sidebar h-full overflow-y-auto">
       {/* Profile Header */}
       <div className="bg-[var(--sidebar-header-bg)] px-6 py-8 text-center lg:px-8">
         <div className="mb-4 inline-block h-32 w-32 overflow-hidden rounded-full border-4 border-white shadow-lg">

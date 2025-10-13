@@ -15,7 +15,7 @@ export default function Home(): ReactElement {
   return (
     <div className="lg:flex min-h-screen">
       {/* Sidebar - Fixed on larger screens, top on mobile */}
-      <div className="lg:sticky lg:top-0 lg:h-screen lg:w-80 xl:w-96">
+      <div className="max-h-screen lg:sticky lg:top-0 lg:h-screen lg:w-80 xl:w-96">
         <Sidebar />
       </div>
 
