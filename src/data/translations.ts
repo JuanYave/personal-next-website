@@ -7,13 +7,13 @@ import type { LocalizedContent } from "@/types/translations";
 export const translations: LocalizedContent = {
   es: {
     hero: {
-      subtitle: "Tech Lead · Senior Backend Engineer",
+      subtitle: "Senior Software Engineer · Tech Lead",
       location: "Ubicación",
     },
     about: {
       title: "Sobre mí",
       content: [
-        "Ingeniero de Software (Software Engineer) con más de 10 años de experiencia en desarrollo backend, arquitectura de software y liderazgo técnico. Éxito comprobado diseñando REST APIs (Application Programming Interfaces) escalables, desarrollando lógica de negocio e impulsando mejoras de calidad usando Python (Django, FastAPI), Java y AWS (Amazon Web Services).",
+        "Ingeniero de Software (Software Engineer) con más de 12 años de experiencia en desarrollo backend, arquitectura de software y liderazgo técnico. Éxito comprobado diseñando REST APIs (Application Programming Interfaces) escalables, desarrollando lógica de negocio e impulsando mejoras de calidad usando Python (Django, FastAPI), Java y AWS (Amazon Web Services).",
         "Reconocido por fomentar equipos colaborativos de alto desempeño y entregar software de alta calidad. Especializado en arquitectura de microservicios, con conocimientos de Cloud Computing, DevOps, CI/CD (Continuous Integration/Continuous Deployment), y desarrollo backend full-stack. He liderado transformaciones de monolitos a microservicios, implementado Infrastructure as Code (IaC) con Terraform y Docker, y agregado observabilidad en entornos de misión crítica.",
       ],
     },
@@ -32,9 +32,19 @@ export const translations: LocalizedContent = {
     ],
     experiences: [
       {
+        company: "Salesforce",
+        role: "Senior Software Engineer",
+        period: "enero 2026 - Presente",
+        location: "Ciudad de México",
+        website: "salesforce.com",
+        achievements: [
+          "Desarrollo herramientas alineadas con los objetivos y necesidades del equipo.",
+        ],
+      },
+      {
         company: "Yave",
         role: "Tech Lead",
-        period: "mayo 2022 - Presente",
+        period: "mayo 2022 - diciembre 2025",
         location: "Ciudad de México",
         website: "yave.mx",
         achievements: [
@@ -161,13 +171,13 @@ export const translations: LocalizedContent = {
   },
   en: {
     hero: {
-      subtitle: "Tech Lead · Senior Backend Engineer",
+      subtitle: "Senior Software Engineer · Tech Lead",
       location: "Location",
     },
     about: {
       title: "About me",
       content: [
-        "Software Engineer with over 10 years of extensive experience in backend development, software architecture, and technical leadership. Proven success designing scalable APIs (Application Programming Interfaces), REST APIs, and GraphQL, driving quality improvements using Python (Django, FastAPI), Java, and AWS (Amazon Web Services).",
+        "Software Engineer with over 12 years of extensive experience in backend development, software architecture, and technical leadership. Proven success designing scalable APIs (Application Programming Interfaces), REST APIs, and GraphQL, driving quality improvements using Python (Django, FastAPI), Java, and AWS (Amazon Web Services).",
         "Recognized for fostering collaborative, high-performance teams and delivering impactful, high-quality software. Specialized in microservices architecture, with knowledge in Cloud Computing, DevOps, CI/CD (Continuous Integration/Continuous Deployment), and full-stack backend development. I've led transformations from monoliths to microservices, implemented Infrastructure as Code (IaC) with Terraform and Docker, and elevated observability in mission-critical environments.",
       ],
     },
@@ -186,9 +196,19 @@ export const translations: LocalizedContent = {
     ],
     experiences: [
       {
+        company: "Salesforce",
+        role: "Senior Software Engineer",
+        period: "January 2026 - Current",
+        location: "Mexico City",
+        website: "salesforce.com",
+        achievements: [
+          "Develop tools aligned with the team's goals and needs.",
+        ],
+      },
+      {
         company: "Yave",
         role: "Tech Lead",
-        period: "May 2022 - Current",
+        period: "May 2022 - December 2025",
         location: "Mexico City",
         website: "yave.mx",
         achievements: [

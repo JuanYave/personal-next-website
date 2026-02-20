@@ -22,9 +22,18 @@ export const contactInfo: ContactInfo = {
 
 export const experiences: Experience[] = [
   {
+    company: "Salesforce",
+    role: "Senior Software Engineer",
+    period: "enero 2026 - Presente",
+    location: "Ciudad de México",
+    achievements: [
+      "Desarrollo herramientas alineadas con los objetivos y necesidades del equipo.",
+    ],
+  },
+  {
     company: "Yave",
     role: "Tech Lead",
-    period: "mayo 2022 - Presente",
+    period: "mayo 2022 - diciembre 2025",
     location: "Ciudad de México",
     achievements: [
       "Gestioné el equipo técnico y consolidé prácticas de desarrollo para elevar calidad y productividad.",
