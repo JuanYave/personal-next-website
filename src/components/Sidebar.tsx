@@ -6,7 +6,7 @@
 import type { ReactElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
+import { Mail, Phone, BriefcaseBusiness, CodeXml, MapPin } from "lucide-react";
 import { useLanguage } from "@/components/language/language-provider";
 import { translations } from "@/data/translations";
 import LanguageToggle from "@/components/language/language-toggle";
@@ -80,7 +80,7 @@ export default function Sidebar(): ReactElement {
           </div>
           
           <div className="flex items-start gap-3">
-            <Linkedin className="mt-0.5 h-4 w-4 flex-none text-accent" />
+            <BriefcaseBusiness className="mt-0.5 h-4 w-4 flex-none text-accent" />
             <Link
               href={t.contactInfo.linkedin}
               target="_blank"
@@ -91,7 +91,7 @@ export default function Sidebar(): ReactElement {
             </Link>
           </div>
           <div className="flex items-start gap-3">
-            <Github className="mt-0.5 h-4 w-4 flex-none text-accent" />
+            <CodeXml className="mt-0.5 h-4 w-4 flex-none text-accent" />
             <Link
               href={t.contactInfo.github}
               target="_blank"
