@@ -28,6 +28,8 @@ export default function ThemeToggle(): ReactElement {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // Announce the browser's resolved theme only after hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 

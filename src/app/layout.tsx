@@ -15,6 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://juanjhs.dev"),
+  alternates: { canonical: "/" },
   title: "Juan José Herrera Sierra | Tech Lead & Senior Backend Engineer",
   description:
     "Portfolio and experience of Juan José Herrera Sierra, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",
@@ -33,12 +35,12 @@ export const metadata: Metadata = {
     "Microservices",
     "Ciudad de México",
   ],
-  authors: [{ name: "Juan José Herrera Sierra", url: "https://juanherrera.dev" }],
+  authors: [{ name: "Juan José Herrera Sierra", url: "https://juanjhs.dev" }],
   creator: "Juan José Herrera Sierra",
   openGraph: {
     type: "website",
     locale: "es_MX",
-    url: "https://juanherrera.dev",
+    url: "https://juanjhs.dev",
     title: "Juan José Herrera Sierra | Tech Lead & Senior Backend Engineer",
     description:
       "Portfolio and experience of Juan José Herrera Sierra, Tech Lead and Senior Backend Engineer specializing in AWS, Python, Java, and DevOps.",

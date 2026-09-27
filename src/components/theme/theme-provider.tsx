@@ -3,6 +3,7 @@
 import type { ReactElement } from "react";
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
@@ -55,6 +56,11 @@ export function ThemeProvider({
   const [theme, setThemeState] = useState<Theme>("system");
   const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">(getSystemTheme);
 
+  const setTheme = useCallback((value: Theme) => {
+    window.localStorage.setItem(THEME_STORAGE_KEY, value);
+    setThemeState(value);
+  }, []);
+
   useEffect(() => {
     if (typeof window === "undefined") {
       return;
@@ -62,6 +68,8 @@ export function ThemeProvider({
 
     const stored = window.localStorage.getItem(THEME_STORAGE_KEY);
     if (isTheme(stored)) {
+      // Restore browser-only preferences after hydration, keeping server markup stable.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setThemeState(stored);
     }
   }, []);
@@ -87,14 +95,12 @@ export function ThemeProvider({
 
     if (theme === "system") {
       handleSystemChange();
-      window.localStorage.setItem(THEME_STORAGE_KEY, "system");
       mediaQuery.addEventListener("change", handleSystemChange);
 
       return () => mediaQuery.removeEventListener("change", handleSystemChange);
     }
 
     applyTheme(theme);
-    window.localStorage.setItem(THEME_STORAGE_KEY, theme);
 
     return () => mediaQuery.removeEventListener("change", handleSystemChange);
   }, [theme]);
@@ -103,9 +109,9 @@ export function ThemeProvider({
     () => ({
       theme,
       resolvedTheme,
-      setTheme: setThemeState,
+      setTheme,
     }),
-    [theme, resolvedTheme],
+    [theme, resolvedTheme, setTheme],
   );
 
   return <ThemeContext.Provider value={contextValue}>{children}</ThemeContext.Provider>;

@@ -4,8 +4,8 @@ Modern, responsive personal portfolio website showcasing professional experience
 
 ## 🚀 Tech Stack
 
-- **Framework**: Next.js 15.5.4 (App Router)
-- **Language**: TypeScript 5
+- **Framework**: Next.js 16.3.6 (App Router)
+- **Language**: TypeScript 7 (with the TypeScript 6 compatibility API for tooling)
 - **Styling**: TailwindCSS 4
 - **Icons**: Lucide React
 - **Fonts**: Geist Sans & Geist Mono
@@ -43,14 +43,14 @@ src/
 
 ### Prerequisites
 
-- Node.js 20+ 
+- Node.js 20.19+ (or a newer supported LTS release)
 - npm, yarn, pnpm, or bun
 
 ### Installation
 
 ```bash
 # Install dependencies
-npm install
+npm ci
 
 # Run development server
 npm run dev
@@ -63,6 +63,9 @@ npm start
 
 # Run linting
 npm run lint
+
+# Generate route types and check with TypeScript 7
+npm run typecheck
 ```
 
 ### Development
@@ -70,6 +73,19 @@ npm run lint
 Open [http://localhost:3000](http://localhost:3000) to see the application.
 
 The application uses Turbopack for fast builds and hot module replacement.
+
+Next.js 16 uses Turbopack by default. Run lint separately from the production
+build, which no longer runs ESLint.
+
+### Tooling compatibility
+
+- ESLint is pinned to 9.39.5 because the React, import, and accessibility plugins
+  used by `eslint-config-next` do not yet declare support for ESLint 10.
+- TypeScript 7.0.2 runs `tsc` through the `@typescript/native` npm alias.
+  The `typescript` alias supplies the official TypeScript 6.0.2 compatibility API
+  required by Next.js tooling and typescript-eslint. See the
+  [official side-by-side setup](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/#running-side-by-side-with-typescript-6.0).
+- The temporary PostCSS override for Next.js 15 is no longer needed.
 
 ## 🎨 Features
 

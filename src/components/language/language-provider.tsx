@@ -24,6 +24,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const stored = localStorage.getItem("language") as Language | null;
     if (stored && (stored === "es" || stored === "en")) {
+      // Restore browser-only preferences after hydration, keeping server markup stable.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLanguageState(stored);
     }
   }, []);
